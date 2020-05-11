@@ -13,7 +13,7 @@
         android:layout_height="220dp"
         android:layout_width="220dp"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/logo"
         app:srcCompat="@drawable/logo"/>
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
         android:gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="80dp"
         android:padding="15dp"
         android:text="Designed by Sugi Wiranto"
         android:textColor="@color/item"

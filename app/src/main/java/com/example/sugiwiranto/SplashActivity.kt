@@ -12,9 +12,9 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        val handle=Handler()
-        Handler().postDelayed({
-            val intent = Intent( this,
+        val handle= Handler()
+        handle.postDelayed({
+            val intent = Intent(this,
                 Walkt::class.java)
             startActivity(intent)
             finish()

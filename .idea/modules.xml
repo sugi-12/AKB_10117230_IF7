@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SugiWiranto.iml" filepath="$PROJECT_DIR$/SugiWiranto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SugiWiranto.iml" filepath="$PROJECT_DIR$/SugiWiranto.iml" group="SugiWiranto" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SugiWiranto/app" />
     </modules>
   </component>
 </project>
