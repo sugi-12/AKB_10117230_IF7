@@ -24,21 +24,119 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Navigation Drawer"
+                    android:text="Home"
                     android:textColor="@color/putih"
                     style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:background="@color/grey"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".Profile">
+
+        <ImageView
+            android:id="@+id/poto"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="@dimen/dm200"
+            android:layout_marginTop="@dimen/dm100"
+            android:background="@drawable/poto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is my content area."/>
-    </LinearLayout>
+            android:layout_marginTop="@dimen/dm20"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Sugi Wiranto"
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm20"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poto" />
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm20"
+            android:textStyle="bold"
+            android:text="10117230"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm20"
+            android:textStyle="bold"
+            android:text="IF-7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+        <TextView
+            android:id="@+id/jrsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm20"
+            android:textStyle="bold"
+            android:text="Teknik Informatika"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kelas" />
+
+        <TextView
+            android:id="@+id/desk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:layout_marginTop="@dimen/dm20"
+            android:fontFamily="sans-serif"
+            android:text="Saya lahir di Karawang 3 Februari 1999. Saya anak ke 2 dari 3 saudara."
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jrsn" />
+
+        <TextView
+            android:id="@+id/riwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:layout_marginTop="@dimen/dm10"
+            android:fontFamily="sans-serif"
+            android:text="Saya alumni dari SDN Karya Bakti 1, MTs Mathla'ul Anwar, SMA Mathla'ul AnwarBatujaya. Dan sekarang saya sedang menempuh pendidikan di Universitas Komputer Indonesia."
+            android:textColor="@color/item"
+            android:textSize="@dimen/dm15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

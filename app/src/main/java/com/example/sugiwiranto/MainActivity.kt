@@ -1,5 +1,6 @@
 package com.example.sugiwiranto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -36,13 +37,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.homee -> {
-                Toast.makeText(this,"Home clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent);
+                Toast.makeText(this,"Home clicked", Toast.LENGTH_SHORT).show();
+                return true;
             }
-            R.id.daily -> {
-                Toast.makeText(this,"Daily clicked", Toast.LENGTH_SHORT).show()
-            }
-            R.id.gallery -> {
-                Toast.makeText(this,"Gallery clicked", Toast.LENGTH_SHORT).show()
+            R.id.friend -> {
+                val intent = Intent(this, FriendList::class.java)
+                startActivity(intent);
+                Toast.makeText(this,"Friend List clicked", Toast.LENGTH_SHORT).show();
+                return true;
             }
         }
         drawerLayout.closeDrawer(GravityCompat.START)

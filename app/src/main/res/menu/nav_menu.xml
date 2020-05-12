@@ -7,13 +7,9 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home"/>
         <item
-            android:id="@+id/daily"
+            android:id="@+id/friend"
             android:icon="@drawable/ic_people_black_24dp"
-            android:title="List Friend"/>
-        <item
-            android:id="@+id/gallery"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="About Me"/>
+            android:title="Friend List"/>
 
     </group>
 
