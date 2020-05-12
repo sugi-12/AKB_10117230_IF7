@@ -19,10 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"/>
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Social"></activity>
         <activity android:name=".FriendList"></activity>
+        <activity android:name=".AddFriend"></activity>
     </application>
 
 </manifest>

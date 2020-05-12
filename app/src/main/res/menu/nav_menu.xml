@@ -11,6 +11,10 @@
             android:icon="@drawable/ic_people_black_24dp"
             android:title="Friend List"/>
 
+        <item
+            android:id="@+id/medsos"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Social Media"/>
     </group>
 
 </menu>

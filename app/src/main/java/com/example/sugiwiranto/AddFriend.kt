@@ -1,0 +1,18 @@
+package com.example.sugiwiranto
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.add_friend.*
+import kotlinx.android.synthetic.main.friend_list.*
+
+class AddFriend: AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.add_friend)
+        backfriendAdd.setOnClickListener() {
+            val intent = Intent(this, FriendList::class.java)
+            startActivity(intent)
+        }
+    }
+}

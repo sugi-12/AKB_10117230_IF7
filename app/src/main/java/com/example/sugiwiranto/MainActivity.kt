@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -44,6 +45,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.friend -> {
                 val intent = Intent(this, FriendList::class.java)
+                startActivity(intent);
+                Toast.makeText(this,"Friend List clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+            R.id.medsos -> {
+                val intent = Intent(this, Social::class.java)
                 startActivity(intent);
                 Toast.makeText(this,"Friend List clicked", Toast.LENGTH_SHORT).show();
                 return true;
