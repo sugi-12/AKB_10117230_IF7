@@ -1,3 +1,10 @@
+/*
+Nama              : Sugi Wiranto
+NIM               : 10117230
+Kelas             : IF-7
+Tanggal Pengerjaan: Selasa, 12-05-2020
+ */
+
 package com.example.sugiwiranto
 
 import android.content.Intent
@@ -25,11 +32,6 @@ class Social : AppCompatActivity() {
 
         fbhint.setOnClickListener() {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://web.facebook.com/profile.php?id=100002282952600"))
-            startActivity(i)
-        }
-
-        emailhint.setOnClickListener() {
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse("sugi12@mahasiswa.unikom.ac.id"))
             startActivity(i)
         }
 

@@ -1,3 +1,10 @@
+/*
+Nama              : Sugi Wiranto
+NIM               : 10117230
+Kelas             : IF-7
+Tanggal Pengerjaan: Minggu, 10-05-2020 Sampai Senin, 11-05-2020
+ */
+
 package com.example.sugiwiranto.ViewPager
 
 

@@ -1,4 +1,11 @@
+/*
+Nama              : Sugi Wiranto
+NIM               : 10117230
+Kelas             : IF-7
+Tanggal Pengerjaan: Minggu, 10-05-2020 Sampai Rabu, 13-05-2020
+ */
 package com.example.sugiwiranto
+
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +19,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_main.*
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

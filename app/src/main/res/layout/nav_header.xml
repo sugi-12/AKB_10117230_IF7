@@ -10,9 +10,9 @@
     android:paddingBottom="15dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        app:srcCompat="@drawable/logo"
         android:id="@+id/poto2"
         android:layout_marginBottom="15dp" />
 
